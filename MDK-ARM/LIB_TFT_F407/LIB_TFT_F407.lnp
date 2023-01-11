@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"lib_tft_f407\startup_stm32f407xx.o"
+"lib_tft_f407\main.o"
+"lib_tft_f407\stm32f4xx_it.o"
+"lib_tft_f407\stm32f4xx_hal_msp.o"
+"lib_tft_f407\ma_ili9341.o"
+"lib_tft_f407\stm32f4xx_ll_fsmc.o"
+"lib_tft_f407\stm32f4xx_hal_rcc.o"
+"lib_tft_f407\stm32f4xx_hal_rcc_ex.o"
+"lib_tft_f407\stm32f4xx_hal_flash.o"
+"lib_tft_f407\stm32f4xx_hal_flash_ex.o"
+"lib_tft_f407\stm32f4xx_hal_flash_ramfunc.o"
+"lib_tft_f407\stm32f4xx_hal_gpio.o"
+"lib_tft_f407\stm32f4xx_hal_dma_ex.o"
+"lib_tft_f407\stm32f4xx_hal_dma.o"
+"lib_tft_f407\stm32f4xx_hal_pwr.o"
+"lib_tft_f407\stm32f4xx_hal_pwr_ex.o"
+"lib_tft_f407\stm32f4xx_hal_cortex.o"
+"lib_tft_f407\stm32f4xx_hal.o"
+"lib_tft_f407\stm32f4xx_hal_exti.o"
+"lib_tft_f407\stm32f4xx_hal_sram.o"
+"lib_tft_f407\stm32f4xx_hal_tim.o"
+"lib_tft_f407\stm32f4xx_hal_tim_ex.o"
+"lib_tft_f407\system_stm32f4xx.o"
+--strict --scatter "LIB_TFT_F407\LIB_TFT_F407.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LIB_TFT_F407.map" -o LIB_TFT_F407\LIB_TFT_F407.axf
